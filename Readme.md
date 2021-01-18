@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юлия Кондратенко](https://up.htmlacademy.ru/htmlcss/30/user/1331173).
-* Наставник: [Натали Белоева] (https://htmlacademy.ru/profile/id1123699)
+* Наставник: [Натали :sun_with_face: Белоева](https://htmlacademy.ru/profile/id1123699).
 
 ---
 
