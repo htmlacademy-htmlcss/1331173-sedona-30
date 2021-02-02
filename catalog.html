@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav>
+        <a class="header-logo"><img src="img/index-logo.svg" width="138" height="70" alt="Логотип сайта городка Седона"></a>
+        <ul class="site-navigation">    
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="">
+      <section>
+        <h1>Поиск жилья</h1>
+        <form method="get" action="https://echo.htmlacademy.ru">   
+          <p>Инфраструктура</p>            
+            <label>
+              <input type="checkbox" name="pull" checked>Бассейн
+            </label>
+            <br>              
+            <label>
+              <input type="checkbox" name="parking">Парковка                
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="wi-fi">Wi-Fi
+            </label>
+          <p>Тип жилья</p>            
+            <label>
+              <input type="checkbox" name="hotel" checked>Гостиница
+            </label>
+            <br>                            
+            <label>
+              <input type="checkbox" name="motel" checked>Мотель                
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="apatment" checked>Апартаменты
+            </label>
+            <p>  
+              <label for="price">Стоимость в сутки(P):</label></p>
+            <input type="text" name="price" id="price" value="от 0 до 3000" >
+            <input type="range" min="1" max="3000">   
+            <button type="submit">Показать</button>
+          </form>
+      </section>  
+      <section class="resalts">
+        <h2>Результаты поиска</h2>
+          <p>Найдено: 3</p>
+          <p>Сортировка:</p>
+          <ul>
+            <li>по цене</li>
+            <li>по типу</li>
+            <li>по рейтингу</li>
+          </ul>
+          <ul>
+            <li>
+              <div>
+                <h3>Amara Resort & Spa</h3>                
+                  <button type="button">Подробнее</button>  
+                  <button type="button">Забронировать</button>
+                  <span class="stars">&#9734 &#9734 &#9734 &#9734</span>
+                  <span class="rait">Рейтинг: 8,5</span> 
+                  <img src="img/Hotels/hotel-1.png" width="135" height="90" alt="Гостиница Amara Resort & Spa">
+              </div>              
+            </li>
+            <li>
+              <div>
+                <h3>Desert Quail Inn</h3>
+                <button type="button">Подробнее</button>  
+                <button type="button">Забронировать</button>
+                <span class="stars">&#9734 &#9734 &#9734</span>
+                <span class="rait">Рейтинг: 8,9</span>
+                <img src="img/Hotels/hotel-2.png" width="135" height="90" alt="Гостиница Desert Quail Inn">
+              </div>               
+            </li>
+            <li>
+              <div>
+                <h3>Villas at Poco Diablo</h3>               
+                  <button type="button">Подробнее</button>                  
+                  <button type="button">Забронировать</button> 
+                  <span class="stars">&#9734 &#9734</span> 
+                  <span class="rait">Рейтинг: 9,2</span> 
+                  <img src="img/Hotels/hotel-3.png" width="135" height="90" alt="Гостиница Villas at Poco Diablo">                
+              </div>              
+            </li>
+          </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p>
+        #visitSEDONA <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+      </p>
+      <ul>
+        <li>
+          <a href="#">Вконтакте</a>
+        </li>
+        <li>
+          <a href="#">Фейсбук</a>
+        </li>
+        <li>
+          <a href="#">Инстаграм</a>
+        </li>
+      </ul>        
+      <p>
+        Website by<a><img src="img/logo-html.png" width="115" height="41" alt="Логотип HTMLacademy"></a>
+      </p>
+    </footer>    
+</body>
+</html>
