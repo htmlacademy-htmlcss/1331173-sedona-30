@@ -27,7 +27,6 @@ body {
   color: var(--basic-extra-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
-  background-image: url("jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -100,8 +99,7 @@ img {
 .feature-item-box h3 {
   font-weight: bold;
   font-size: 21px;
-  line-height: 21px;
-  color: var(--basic-white);
+  color: inherit;
 }
 
 .feature-items {
