@@ -14,6 +14,7 @@
     <base href="https://htmlacademy-htmlcss.github.io/1331173-sedona-30/4/">
 </head>
   <body class="page-body">
+    <div class="wrapper">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="header-logo"><img src="img/logo/index-logo.svg" width="138" height="70" alt="Логотип сайта городка Седона"></a>
@@ -34,7 +35,7 @@
         </section>
         <section>
           <div class="features">        
-            <p class="lead">Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
+            <p class="lead">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
             <p class="text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>            
           <h2>Преимущества</h2>
@@ -48,15 +49,15 @@
                 <img class="background-real-town" src="img/real-city.jpg" width="800" height="256" alt="Город Седона">             
                 <ul class="main-element">
                   <li>
-                    <h4>Жилье</h4>
+                    <h3>Жилье</h3>
                     <p> Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                   </li>
                   <li>
-                    <h4>Еда</h4>
+                    <h3>Еда</h3>
                     <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                   </li>
                   <li>
-                    <h4>Сувениры</h4>
+                    <h3>Сувениры</h3>
                     <p>Не только китайского, но и местного производства!</p>
                   </li>
                 </ul> 
@@ -69,17 +70,17 @@
                 </div>
                   <img src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола в Седоне">
               </li>  
-                <li class="feature-items">
+                <li class="feature-item last-items">
                   <h3>Небольшая площадь</h3>
                   <p>№3</p> 
                   <p>все достопримечательности находятся очень близко</p>
                 </li>
-                <li class="feature-items">       
+                <li class="feature-item last-items">       
                   <h3>Красивая дорога</h3> 
                   <p>№4</p>
                   <p>ехать в седону из лас-вегаса совсем не скучно!</p>
                 </li>
-                <li class="feature-items">
+                <li class="feature-item last-items">
                   <h3>Мало туристов</h3> 
                   <p>№5</p>
                   <p>большинство едет в гранд каньон и толпится там</p> 
@@ -90,7 +91,7 @@
           <h2>Поиск гостиницы</h2>
           <p class="search-text">Заитересовались?<p>  
           <p class="search-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button class="button-open-form" type="button">Поиск гостиницы в седоне</button>
+          <button class="button-open-form" type="button"><span>Поиск гостиницы в седоне</span></button>
           <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="post">                                  
             <div class="date-selection">
               <p class="search-item">
@@ -109,7 +110,7 @@
                 <label for="search-children">Дети</label>
                 <input type="number" id="search-children" name="children" value="0"/>
               </p>            
-              <button class="button-search" type="submit">Найти</button>
+              <button class="button-search" type="submit"><span>Найти</span></button>
             </div>   
           </form>  
         </section>  
@@ -118,26 +119,14 @@
         <p class="footer-contacts">#visitSEDONA <a class="footer-phone" href="tel:+74956660166">ТЕЛ: +7(495) 665-01-66</a>
         </p>
         <ul class="footer-social">
-          <li>
-            <a class="social-button" href="#">Twitter
-              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34504 15.9981H4.89904C4.48904 15.9981 0.735038 15.5381 0.0010376 14.1111C2.27204 14.3071 3.89404 13.6891 4.69404 12.9341C3.73404 12.6341 2.01504 12.4571 1.71504 9.98409C2.06404 10.0901 2.27904 10.2121 2.90504 10.1031C1.70504 9.24709 0.374038 8.53009 0.448038 6.33009C0.733038 6.65809 1.51504 6.86609 1.78804 6.80209C1.08504 6.56109 -0.181962 3.44209 0.894038 1.85009C2.71204 3.70409 4.62904 5.45609 8.04604 5.62309C8.25404 3.33009 9.18304 1.79309 10.95 1.14409Z" fill="white"/>
-              </svg>
-            </a>
+          <li>Twitter
+            <a class="social-button icon-twitter" href="#"></a>
           </li>
-          <li>
-            <a class="social-button" href="#">Facebook
-              <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
-              </svg>
-            </a>
+          <li>Facebook
+            <a class="social-button icon-facebook" href="#"></a>
           </li>
-          <li>
-            <a class="social-button" href="#">Youtube
-              <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
-              </svg>
-            </a>
+          <li>Youtube
+            <a class="social-button icon-youtube" href="#"></a>
           </li>
         </ul>        
         <p class="footer-copyright">Website by<a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
@@ -146,6 +135,7 @@
           </svg>
           </a>
         </p>
-      </footer>    
+        </footer>
+    </div>          
   </body>
 </html>
