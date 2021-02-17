@@ -1,0 +1,223 @@
+:root {
+  --basic-white: #ffffff;
+  --basic-blue: #81B3D2;
+  --basic-light-grey: #EEEEEE;
+  --basic-black: #000000;
+  --basic-extra-black: #333333;
+  --special-deep-blue: #5496BD;
+  --special-light-blue: #669EC0;
+  --basic-brown: #766357;
+  --special-light-brown: #604E43;
+  --special-deep-brown: #503E33;
+  --basic-input: #F2F2F2;
+  --special-input: #EBEBEB;
+  --basic-footer: rgba(255, 255, 255, 0.9);
+}
+
+/* Global */
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Verdana", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-extra-black);
+  text-transform: uppercase;
+  background-color: var(--basic-light-grey);
+}
+.wrapper {
+  background-color: var(--basic-white);
+  width: 1200px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+}
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+  font-weight: bold;
+}
+
+.site-navigation a:hover {
+  color: var(--basic-blue);
+}
+.site-navigation a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.features-list {
+  list-style: none;
+}
+.lead {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.feature-list h3 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+.feature-item-box {
+  width: 400px;
+  min-height: 256px;
+  background-color: var(--basic-blue);
+  font-weight: normal;
+  color: var(--basic-white);
+  text-align: center;
+}
+
+.feature-item-box h3 {
+  color: inherit;
+}
+
+.last-items {
+  background-color: var(--basic-light-grey);
+}
+
+.search {
+  text-align: center;
+}
+
+.search-text {
+  color: var(--basic-black);
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.button-open-form {
+  font-size: 21px;
+  line-height: 26px;
+  background-color: var(--basic-brown);
+  color: var(--basic-white);
+  text-transform: inherit;
+}
+
+.button-open-form:hover {
+  background-color: var(--special-light-brown);
+}
+.button-open-form:active {
+  background-color: var(--special-deep-brown);
+  color:rgba(255, 255, 255, 0.3);
+}
+
+/*.button-open-form:active span {
+  opacity: 0.3;
+} */
+
+.button-search {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+  text-transform: inherit;
+  
+}
+.button-search:hover {
+  background-color: var(--special-light-blue);
+}
+
+.button-search:active {
+  background-color: var(--special-deep-blue);
+  color:rgba(255, 255, 255, 0.3)
+}
+
+/*
+.button-search:active span {
+  opacity: 0.3; 
+}  */
+
+
+.date-selection label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+input {
+  background-color: var(--basic-input);
+}
+input:hover {
+  background-color: var(--special-input);
+}
+input:focus {
+  background-color: var(--basic-white);
+}
+
+.main-footer {
+  color: var(--basic-black);
+}
+.footer-contacts, .footer-phone {
+  line-height: 26px;
+  font-size: 21px;
+  color: var(--basic-black);
+  font-weight: 700;
+}
+.social-button {
+  display: inline-block;
+  background-color: var(--basic-blue);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 46px;
+  height: 48px;
+}
+/* так получилось и цвет поменять и прозрачность логотипа, но сам логотип не в центре 
+
+.social-button::before {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon-twitter::before {
+  content: url(../img/logo/twitter-logo.svg);
+}
+.icon-twitter:active::before {
+  opacity: 0.5;
+} */
+
+.icon-twitter {
+  background-image: url(../img/logo/twitter-logo.svg);
+}
+
+.icon-facebook {
+  background-image: url(../img/logo/fb-logo.svg);
+}
+.icon-youtube {
+  background-image: url(../img/logo/youtub-logo.svg);
+}
+.social-button:hover {
+  background-color: var(--special-light-blue)
+}
+.social-button:active {
+  background-color: var(--special-deep-blue)
+}
+.footer-copyright {
+  line-height: 26px;
+  color: var(--basic-black);
+}
