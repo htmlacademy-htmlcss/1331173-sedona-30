@@ -17,7 +17,7 @@
 /* Global */
 
 body {
-  min-width: 1280px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", "Verdana", sans-serif;
@@ -30,7 +30,7 @@ body {
 }
 .wrapper {
   background-color: var(--basic-white);
-  min-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 a {
@@ -166,10 +166,10 @@ input:focus {
 }
 
 .main-footer {
-  line-height: 26px;
   color: var(--basic-black);
 }
 .footer-contacts, .footer-phone {
+  line-height: 26px;
   font-size: 21px;
   color: var(--basic-black);
   font-weight: 700;
