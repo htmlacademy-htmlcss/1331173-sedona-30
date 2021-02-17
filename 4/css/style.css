@@ -17,7 +17,7 @@
 /* Global */
 
 body {
-  min-width: 1280px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", "Verdana", sans-serif;
@@ -30,7 +30,7 @@ body {
 }
 .wrapper {
   background-color: var(--basic-white);
-  min-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 a {
@@ -123,11 +123,12 @@ img {
 }
 .button-open-form:active {
   background-color: var(--special-deep-brown);
-  color: var(--basic-white);
+  color:rgba(255, 255, 255, 0.3);
 }
-.button-open-form:active span {
+
+/*.button-open-form:active span {
   opacity: 0.3;
-}
+} */
 
 .button-search {
   font-size: 21px;
@@ -144,10 +145,15 @@ img {
 
 .button-search:active {
   background-color: var(--special-deep-blue);
+  color:rgba(255, 255, 255, 0.3)
 }
+
+/*
 .button-search:active span {
-  opacity: 0.3;
-}
+  opacity: 0.3; 
+}  */
+
+
 .date-selection label {
   font-size: 14px;
   line-height: 26px;
@@ -166,10 +172,10 @@ input:focus {
 }
 
 .main-footer {
-  line-height: 26px;
   color: var(--basic-black);
 }
 .footer-contacts, .footer-phone {
+  line-height: 26px;
   font-size: 21px;
   color: var(--basic-black);
   font-weight: 700;
