@@ -123,11 +123,12 @@ img {
 }
 .button-open-form:active {
   background-color: var(--special-deep-brown);
-  color: var(--basic-white);
+  color:rgba(255, 255, 255, 0.3);
 }
-.button-open-form:active span {
+
+/*.button-open-form:active span {
   opacity: 0.3;
-}
+} */
 
 .button-search {
   font-size: 21px;
@@ -144,10 +145,15 @@ img {
 
 .button-search:active {
   background-color: var(--special-deep-blue);
+  color:rgba(255, 255, 255, 0.3)
 }
+
+/*
 .button-search:active span {
-  opacity: 0.3;
-}
+  opacity: 0.3; 
+}  */
+
+
 .date-selection label {
   font-size: 14px;
   line-height: 26px;
