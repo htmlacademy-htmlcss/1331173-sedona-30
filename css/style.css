@@ -2,10 +2,12 @@
   --basic-white: #ffffff;
   --basic-blue: #81B3D2;
   --basic-light-grey: #EEEEEE;
+  --warm-grey: #666666;
   --basic-black: #000000;
   --basic-extra-black: #333333;
   --special-deep-blue: #5496BD;
   --special-light-blue: #669EC0;
+  --special-hover-blue: #81B3D2;
   --basic-brown: #766357;
   --special-light-brown: #604E43;
   --special-deep-brown: #503E33;
@@ -32,6 +34,7 @@ body {
   background-color: var(--basic-white);
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 a {
   text-decoration: none;
@@ -65,7 +68,27 @@ img {
   opacity: 0.3;
 }
 
-.features-list {
+.site-navigation .site-navigation-current {
+  color: var(--basic-brown);
+}  
+
+/*
+.site-navigation .link-hotels:visited {
+  color: var(--basic-brown);
+}
+.site-navigation .link-hotels:hover {
+  color: var(--basic-blue);
+}
+.site-navigation .link-hotels:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}   */
+
+.background-logo {
+  background-image: url(../img/background/main-index-background.jpg);
+}
+
+.feature-list {
   list-style: none;
 }
 .lead {
@@ -81,7 +104,9 @@ img {
   line-height: 21px;
   color: var(--basic-black);
 }
-
+.main-element {
+  list-style: none;
+}
 .feature-item-box {
   width: 400px;
   min-height: 256px;
@@ -111,6 +136,8 @@ img {
 }
 
 .button-open-form {
+  display: inline-block;
+  padding: 30px 125px;
   font-size: 21px;
   line-height: 26px;
   background-color: var(--basic-brown);
@@ -126,11 +153,9 @@ img {
   color:rgba(255, 255, 255, 0.3);
 }
 
-/*.button-open-form:active span {
-  opacity: 0.3;
-} */
-
 .button-search {
+  display: inline-block;
+  padding: 16px 180px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -147,12 +172,6 @@ img {
   background-color: var(--special-deep-blue);
   color:rgba(255, 255, 255, 0.3)
 }
-
-/*
-.button-search:active span {
-  opacity: 0.3; 
-}  */
-
 
 .date-selection label {
   font-size: 14px;
@@ -188,18 +207,6 @@ input:focus {
   width: 46px;
   height: 48px;
 }
-/* так получилось и цвет поменять и прозрачность логотипа, но сам логотип не в центре 
-
-.social-button::before {
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.icon-twitter::before {
-  content: url(../img/logo/twitter-logo.svg);
-}
-.icon-twitter:active::before {
-  opacity: 0.5;
-} */
 
 .icon-twitter {
   background-image: url(../img/logo/twitter-logo.svg);
@@ -221,3 +228,125 @@ input:focus {
   line-height: 26px;
   color: var(--basic-black);
 }
+
+.filter-box {
+  background-image: url(../img/background/catalog-background.jpg);
+  background-color: var(--basic-light-grey);
+  color: var(--basic-white);
+}
+.filter-box legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+.filter-button {
+  border: 2px solid #FFFFFF;
+  border-radius: 2px;
+  background: var(--basic-black); 
+  background: rgba(255, 255, 255, 0);
+  color: var(--basic-white);
+  text-align: center;
+}
+
+.filter-button:hover {
+  background: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.view-results, .catalog-title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black)
+}
+.sort {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.sort-list {
+  list-style: none;
+}
+.sort-list a {
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: underline  1px dotted #81B3D2;
+  color: rgba(0, 0, 0, 0.3);
+}
+.sort-item:hover {
+  color: var(--special-hover-blue);
+  text-decoration: underline 1px dotted #81B3D2;
+}
+.sort-item:active {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+.sort-list .sort-item-current {
+  color: var(--special-hover-blue);
+}
+.catalog-title:hover {
+  color: var(--special-hover-blue);
+}
+.catalog-title:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.rating {
+  display: inline-block;
+  padding: 5px 15px;
+  background: var(--basic-input);
+  color: var(--warm-grey);
+}
+.about-hotel {
+  display: inline-block;
+  padding: 5px 10px;
+  background: var(--special-hover-blue);
+  color: var(--basic-white);
+  font-weight: bold;
+}
+.about-hotel:hover {
+  background-color: var(--special-light-blue);
+}
+
+.about-hotel:active {
+  background-color: var(--special-deep-blue);
+  color:rgba(255, 255, 255, 0.3);
+}
+.confirm  {
+  display: inline-block;
+  padding: 5px 15px;
+  background: var(--basic-brown);
+  color: var(--basic-white);
+  font-weight: bold;
+}
+.confirm:hover {
+  background-color: var(--special-light-brown);
+}
+.confirm:active {
+  background-color: var(--special-deep-brown);
+  color:rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+
+
+/* так получилось и цвет поменять и прозрачность логотипа, но сам логотип не в центре 
+
+.social-button::before {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon-twitter::before {
+  content: url(../img/logo/twitter-logo.svg);
+}
+.icon-twitter:active::before {
+  opacity: 0.5;
+} */
+
+
+/*
+.button-search:active span {
+  opacity: 0.3; 
+}  */
