@@ -7,13 +7,17 @@
   --basic-extra-black: #333333;
   --special-deep-blue: #5496BD;
   --special-light-blue: #669EC0;
-  --special-hover-blue: #81B3D2;
   --basic-brown: #766357;
   --special-light-brown: #604E43;
   --special-deep-brown: #503E33;
   --basic-input: #F2F2F2;
   --special-input: #EBEBEB;
   --basic-footer: rgba(255, 255, 255, 0.9);
+  --basic-grey: #808080;
+  --special-white: rgba(255, 255, 255, 0.3);
+  --basic-toggle: #ABABAB;
+  --special-toggle: rgba(171,171,171, 0.3);
+  --special-black: rgba(0,0,0,0.3);
 }
 
 /* Global */
@@ -44,6 +48,19 @@ img {
   max-width: 100%;
   height: auto;
 }
+.button {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  width: 110px;
+  height: 27px;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  border: none;
+  text-transform: uppercase;
+}
 
 /* Main navigation */
 
@@ -54,12 +71,10 @@ img {
 .site-navigation {
   list-style: none;
 }
-
 .site-navigation a {
   color: var(--basic-black);
   font-weight: bold;
 }
-
 .site-navigation a:hover {
   color: var(--basic-blue);
 }
@@ -67,25 +82,12 @@ img {
   color: var(--basic-black);
   opacity: 0.3;
 }
-
 .site-navigation .site-navigation-current {
   color: var(--basic-brown);
-}  
-
-/*
-.site-navigation .link-hotels:visited {
-  color: var(--basic-brown);
 }
-.site-navigation .link-hotels:hover {
-  color: var(--basic-blue);
-}
-.site-navigation .link-hotels:active {
-  color: var(--basic-black);
-  opacity: 0.3;
-}   */
-
 .background-logo {
   background-image: url(../img/background/main-index-background.jpg);
+  background-color: var(--basic-grey);
 }
 
 .feature-list {
@@ -115,62 +117,58 @@ img {
   color: var(--basic-white);
   text-align: center;
 }
-
 .feature-item-box h3 {
   color: inherit;
 }
-
 .last-items {
   background-color: var(--basic-light-grey);
 }
-
-.search {
+.search-box {
   text-align: center;
 }
-
 .search-text {
   color: var(--basic-black);
   font-weight: bold;
   font-size: 30px;
   line-height: 30px;
 }
-
-.button-open-form {
+.open-form {
   display: inline-block;
-  padding: 30px 125px;
-  font-size: 21px;
-  line-height: 26px;
-  background-color: var(--basic-brown);
-  color: var(--basic-white);
-  text-transform: inherit;
-}
-
-.button-open-form:hover {
-  background-color: var(--special-light-brown);
-}
-.button-open-form:active {
-  background-color: var(--special-deep-brown);
-  color:rgba(255, 255, 255, 0.3);
-}
-
-.button-search {
-  display: inline-block;
-  padding: 16px 180px;
+  vertical-align: middle;
+  padding: 30px 117px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  background-color: var(--basic-blue);
-  color: var(--basic-white);
+  width: 568px;
+  height: 86px;
+  background-color: var(--basic-brown);
+  }
+.open-form:hover {
+  background-color: var(--special-light-brown);
+}
+.open-form:active {
+  background-color: var(--special-deep-brown);
+  color: var(--special-white);
+}
+
+.search {
+  display: inline-block;
+  vertical-align: middle;
+  width: 458px;
+  height: 58px;
+  padding: 16px 180px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
   text-transform: inherit;
   
 }
-.button-search:hover {
+.search:hover {
   background-color: var(--special-light-blue);
 }
-
-.button-search:active {
+.search:active {
   background-color: var(--special-deep-blue);
-  color:rgba(255, 255, 255, 0.3)
+  color: var(--special-white);
 }
 
 .date-selection label {
@@ -201,6 +199,7 @@ input:focus {
 }
 .social-button {
   display: inline-block;
+  vertical-align: middle;
   background-color: var(--basic-blue);
   background-position: center;
   background-repeat: no-repeat;
@@ -229,28 +228,81 @@ input:focus {
   color: var(--basic-black);
 }
 
+/* Catalog Section: filter-box */
+
 .filter-box {
   background-image: url(../img/background/catalog-background.jpg);
-  background-color: var(--basic-light-grey);
+  background-color: var(--basic-grey);
   color: var(--basic-white);
 }
 .filter-box legend {
   font-size: 16px;
   font-weight: bold;
+  line-height: 21px;
 }
-.filter-button {
-  border: 2px solid #FFFFFF;
-  border-radius: 2px;
-  background: var(--basic-black); 
-  background: rgba(255, 255, 255, 0);
-  color: var(--basic-white);
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.input-price {  
   text-align: center;
+  color: var(--basic-white);
+  background: none;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+}
+.range-filter {
+  width: 317px;
+}
+.range-controls {
+  position: relative;
+  height: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  padding-top: 20px;
+}
+ .scale {
+  height: 2px;
+  background: var(--special-white);
+}
+.range-controls .bar {
+  width: 75%;
+  height: 2px;
+  background: var(--basic-white);
+}
+.range-controls .toggle {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-toggle);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--special-toggle);
+  cursor: pointer;
+}
+.range-controls .toggle-min {
+  left: 0;
 }
 
+.range-controls .toggle-max {
+  left: 75%;
+}
+.filter-button {
+  width: 137px;
+  height: 36px;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  background: none;
+}
 .filter-button:hover {
   background: var(--basic-white);
   color: var(--basic-black);
-}
+}  
 
 .view-results, .catalog-title {
   font-weight: bold;
@@ -270,37 +322,37 @@ input:focus {
 .sort-list a {
   font-size: 12px;
   line-height: 18px;
-  text-decoration: underline  1px dotted #81B3D2;
-  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted var(--basic-blue);
+  color: var(--special-black);
 }
 .sort-item:hover {
-  color: var(--special-hover-blue);
-  text-decoration: underline 1px dotted #81B3D2;
+  color: var(--basic-blue);
 }
 .sort-item:active {
   color: var(--basic-black);
-  text-decoration: none;
+  border-bottom: none;
 }
 .sort-list .sort-item-current {
-  color: var(--special-hover-blue);
+  color: var(--basic-blue);
+  border-bottom: none;
 }
 .catalog-title:hover {
-  color: var(--special-hover-blue);
+  color: var(--basic-blue);
 }
 .catalog-title:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--special-black);
 }
 .rating {
   display: inline-block;
+  vertical-align: middle;
   padding: 5px 15px;
   background: var(--basic-input);
   color: var(--warm-grey);
 }
 .about-hotel {
   display: inline-block;
-  padding: 5px 10px;
-  background: var(--special-hover-blue);
-  color: var(--basic-white);
+  vertical-align: middle;
+  padding: 5px 5px;
   font-weight: bold;
 }
 .about-hotel:hover {
@@ -309,13 +361,13 @@ input:focus {
 
 .about-hotel:active {
   background-color: var(--special-deep-blue);
-  color:rgba(255, 255, 255, 0.3);
+  color: var(--special-white);
 }
-.confirm  {
+.confirm {
   display: inline-block;
-  padding: 5px 15px;
+  vertical-align: middle;
+  padding: 10px 16px 5px 16px;
   background: var(--basic-brown);
-  color: var(--basic-white);
   font-weight: bold;
 }
 .confirm:hover {
@@ -323,30 +375,5 @@ input:focus {
 }
 .confirm:active {
   background-color: var(--special-deep-brown);
-  color:rgba(255, 255, 255, 0.3);
+  color:var(--special-white);
 }
-
-
-
-
-
-
-
-/* так получилось и цвет поменять и прозрачность логотипа, но сам логотип не в центре 
-
-.social-button::before {
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.icon-twitter::before {
-  content: url(../img/logo/twitter-logo.svg);
-}
-.icon-twitter:active::before {
-  opacity: 0.5;
-} */
-
-
-/*
-.button-search:active span {
-  opacity: 0.3; 
-}  */
