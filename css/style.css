@@ -195,7 +195,7 @@ ul, ol {
 }
 .grid-features {
   display: grid;
-  grid-template-columns: 400px 400px 400px; 
+  grid-template-columns: 1fr 1fr 1fr; 
   grid-template-rows: 216px 1fr;
   outline: 5px solid rgba(0, 255, 42, 0.973);
   outline-offset: -5px;
@@ -271,7 +271,6 @@ ul, ol {
   grid-column: 1/4;  
   grid-row: 2/3; 
   list-style: none;
-  margin-top: 158px;
 } 
 
 .feature-item-box-grid1 {
