@@ -28,9 +28,9 @@
     </header>
     <main class="main-section">
       <section class="filter-box">
-        <h1>Поиск жилья</h1>
+        <h1 class="visually-hidden">Поиск жилья</h1>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru"> 
-          <fieldset>  
+          <fieldset class="filter-option-box">  
           <legend>Инфраструктура</legend>            
             <input class="filter-option" type="checkbox" name="pull" id="filter-pull" checked>
             <label for="filter-pull">Бассейн</label>          
@@ -39,7 +39,7 @@
             <input class="filter-option" type="checkbox" name="wi-fi" id="filter-wifi">
             <label for="filter-wifi">Wi-Fi</label>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-type-box">
           <legend>Тип жилья</legend>
             <input class="filter-type" type="checkbox" name="hotel" id="filter-hotel" checked>            
             <label for="filter-hotel">Гостиница</label>
@@ -70,8 +70,8 @@
         </form>
       </section>  
       <section class="results-box">
-        <h2>Результаты поиска</h2>
-          <p class="view-results">Найдено: 3</p>
+        <h2 class="visually-hidden">Результаты поиска</h2>
+          <p class="title-results">Найдено: 3</p>
           <p class="sort">Сортировка:</p>
           <ul class="sort-list">
             <li><a href="#" class="sort-item-current">по цене</a></li>
@@ -125,7 +125,7 @@
             </li>
           </ul>
       </section>
-    </main>
+    </main> 
     <footer class="main-footer">
       <p class="footer-contacts">#visitSEDONA <a class="footer-phone" href="tel:+74956660166">ТЕЛ: +7(495) 665-01-66</a>
       </p>
