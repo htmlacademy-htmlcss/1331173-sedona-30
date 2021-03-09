@@ -133,6 +133,7 @@ img {
   left: 0;
   right: 0;
   width: fit-content;
+  width: -moz-fit-content;
   margin: auto;
  }
 
@@ -334,6 +335,9 @@ input:focus {
 .map {
   background-image: url(../img/map.png);
 }
+
+/* Footer */
+
 .main-footer {
   z-index: 100;
   position: absolute;
@@ -397,6 +401,7 @@ input:focus {
 .results-box {
   padding-left: 72px;
   padding-right: 72px;
+  padding-top: 29px;
 }
 .title-results { 
   margin-right: 20px;
@@ -417,12 +422,14 @@ input:focus {
   display: flex;
   flex-direction: column;
   margin-right: 100px;
+  border: none;
 }
 .filter-type-box {
   display: flex;
   flex-direction: column;
   margin: 0;
   margin-right: auto;
+  border: none;
 }
 .filter-box legend {
   font-size: 16px;
