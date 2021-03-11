@@ -155,22 +155,19 @@ img {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 1200px;
   min-height: 509px;
   background-image: url(../img/background/main-index-background.jpg);
   background-color: var(--basic-grey);
+  margin-bottom: 42px;
 }
 .background-logo::before {
   content: url(../img/white-mask.svg);
   position: absolute;
   z-index: 1;
   left: 0;
-  bottom: -6px;
- 
-}
-
-.features {
-  padding-top: 42px;  
+  bottom: -6px; 
 }
 
 .feature-list {
@@ -180,6 +177,7 @@ img {
   padding: 0;
   margin: 0;
 }
+
 .feature-item {
   display: flex;
   flex-wrap: wrap;
@@ -195,21 +193,16 @@ img {
   list-style: none;
   padding: 0;
   padding-top: 120px;
-  padding-bottom: 82px;
 } 
 .main-element {
   width: 400px;
+  margin-bottom: 82px;
 }
-.last-items-box {
-  display: flex;
-  margin: 0;
-  padding: 47px 0 54px 0;
-  list-style: none;
-  width: 100%;
-  background-color: var(--basic-light-grey);  
-}
+
 .last-items {
   width: 400px;
+  margin-bottom: 54px;
+  background-color: var(--basic-light-grey);
 }
 
 .lead {
@@ -229,6 +222,9 @@ img {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
+  margin: 0;
+  margin-bottom: 25px;
+  padding-top: 47px;
 }
 .feature-item-box {
   width: 400px;
@@ -236,15 +232,24 @@ img {
   background-color: var(--basic-blue);
   font-weight: normal;
   color: var(--basic-white);  
-  padding-top: 47px;
 }
 .feature-item-box h3 {
   color: inherit; 
 }
 
+.feature-item-box p:nth-child(2),
+.last-items p:nth-child(2) {
+  margin: 0;
+  margin-bottom: 23px;
+}
+.feature-item-box p:last-child,
+.last-items p:last-child {
+  margin: 0;
+  margin-bottom: 54px;
+}
+
 .search-box {
   text-align: center;
-  padding-top: 55px;
 }
 .search-form {
   position: absolute;
@@ -346,7 +351,7 @@ input:focus {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: min-content;
+  grid-template-rows: 120px;
   color: var(--basic-black);
 }
 .page-catalog .main-footer {
@@ -363,7 +368,14 @@ input:focus {
 }
 .footer-social-button {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
   list-style: none;
+}
+.footer-social-button li:first-child,
+.footer-social-button li:nth-child(2) {
+  margin-right: 6px;
 }
 .social-button {
   display: inline-block;
@@ -398,14 +410,6 @@ input:focus {
 
 /* Catalog Section: filter-box */
 
-.results-box {
-  padding-left: 72px;
-  padding-right: 72px;
-  padding-top: 29px;
-}
-.title-results { 
-  margin-right: 20px;
-}
 
 .filter-box {
   background-image: url(../img/background/catalog-background.jpg);
@@ -505,7 +509,17 @@ input:focus {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  color: var(--basic-black)
+  color: var(--basic-black);
+  margin: 0;
+}
+.results-box {
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-top: 29px;
+}
+.title-results {
+  margin: 0; 
+  margin-right: 20px;
 }
 
 .sort {  
@@ -513,11 +527,14 @@ input:focus {
   line-height: 18px;
   color: var(--basic-black);
 }
-
-.sort-list,
-.catalog {
+.sort-list {
+  display: flex;
+  margin: 0;
+  margin-bottom: 31px;
   list-style: none;
+  padding: 0;
 }
+
 .sort-list a {
   font-size: 12px;
   line-height: 18px;
@@ -541,13 +558,47 @@ input:focus {
 .catalog-title:active {
   color: var(--special-black);
 }
-
+.catalog-item h3 {
+  margin: 0;
+  margin-bottom: 7px;
+}
+.catalog-item img {
+  padding: 30px 29px 30px 0;
+}
+.catalog {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.catalog-item {
+  display: flex;
+}
+.catalog-item-column {
+  display:flex;
+  flex-direction: column;
+  padding-top: 23px;
+}
+.item-text-column {
+  display: flex;
+}
+.item-text-column p:first-child {
+  margin: 0;
+  margin-right: 45px;
+  margin-bottom: 15px;
+}
+.item-text-column p:nth-child(2) {
+  margin: 0;
+  margin-right: 9px;
+  margin-bottom: 15px;
+}
+.about-hotel {
+  margin-right: 6px;
+}
 .rating {
-  grid-column: 3/4;
-  grid-row: 2/3;
   height: 27px;
   width: 110px;
-  margin: 0;
+  margin-right: 0;
+  margin-left: auto;
   display: inline-block;
   vertical-align: middle;
   padding: 3px 15px;
