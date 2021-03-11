@@ -14,6 +14,7 @@
   <link href="css/style.css" rel="stylesheet">
   <base href="https://htmlacademy-htmlcss.github.io/1331173-sedona-30/8/">
 </head>
+
 <body class="page-body page-catalog">
   <div class="wrapper">
     <header class="main-header">
@@ -68,30 +69,37 @@
                 </div>
               </div>
               <button type="submit" class="button filter-button">Показать</button>
-            </div>  
+            </div>
           </fieldset>
         </form>
       </section>
       <section class="results-box">
         <h2 class="visually-hidden">Результаты поиска</h2>
-          <p class="title-results">Найдено: 3</p>
-          <p class="sort">Сортировка:</p>
-          <ul class="sort-list">
-            <li><a href="#" class="sort-item-current">по цене</a></li>
-            <li><a href="#" class="sort-item">по типу</a></li>
-            <li><a href="#" class="sort-item">по рейтингу</a></li>
-            <li><a href="#" class="sort-item"><span>по возрастанию</span></a></li>
-            <li><a href="#" class="sort-item"><span>по убыванию</span></a></li>
-          </ul>
+        <p class="title-results">Найдено: 3</p>
+
+        <p class="sort">Сортировка:</p>
+        <ul class="sort-list">
+          <li><a href="#" class="sort-item-current">по цене</a></li>
+          <li><a href="#" class="sort-item">по типу</a></li>
+          <li><a href="#" class="sort-item">по рейтингу</a></li>
+          <li><a href="#" class="sort-item"><span>по возрастанию</span></a></li>
+          <li><a href="#" class="sort-item"><span>по убыванию</span></a></li>
+        </ul>
         <ul class="catalog">
           <li class="catalog-item">
             <a href="#"><img src="img/hotels/hotel-1.jpg" width="135" height="90"
                 alt="Гостиница Amara Resort & Spa"></a>
-            <h3><a href="#" class="catalog-title">Amara Resort & Spa</a></h3>
-            <p class="text">Гостиница</p>
-            <p class="text-price">от 4000 р.</p>
-            <a href="#" class="button about-hotel">Подробнее</a>
-            <a href="#" class="button button-brown">Забронировать</a>
+            <div class="catalog-item-column">
+              <h3><a href="#" class="catalog-title">Amara Resort & Spa</a></h3>
+              <div class="item-text-column">
+                <p>Гостиница</p>
+                <p class="text-price">от 4000 р.</p>
+              </div>
+              <div class="item-button-column">
+                <a href="#" class="button about-hotel">Подробнее</a>
+                <a href="#" class="button button-brown">Забронировать</a>
+              </div>
+            </div>
             <div class="stars">
               <span></span>
               <span></span>
@@ -102,11 +110,17 @@
           </li>
           <li class="catalog-item">
             <a href="#"><img src="img/hotels/hotel-2.jpg" width="135" height="90" alt="Гостиница Desert Quail Inn"></a>
-            <h3><a href="#" class="catalog-title">Desert Quail Inn</a></h3>
-            <p class="text">Гостиница</p>
-            <p class="text-price">от 3000 р.</p>
-            <a href="#" class="button about-hotel">Подробнее</a>
-            <a href="#" class="button button-brown">Забронировать</a>
+            <div class="catalog-item-column">
+              <h3><a href="#" class="catalog-title">Desert Quail Inn</a></h3>
+              <div class="item-text-column">
+                <p class="text">Гостиница</p>
+                <p class="text-price">от 3000 р.</p>
+              </div>
+              <div class="item-button-column">
+                <a href="#" class="button about-hotel">Подробнее</a>
+                <a href="#" class="button button-brown">Забронировать</a>
+              </div>
+            </div>
             <div class="stars">
               <span></span>
               <span></span>
@@ -117,11 +131,17 @@
           <li class="catalog-item">
             <a href="#"><img src="img/hotels/hotel-3.jpg" width="135" height="90"
                 alt="Гостиница Villas at Poco Diablo"></a>
-            <h3><a href="#" class="catalog-title">Villas at Poco Diablo</a></h3>
-            <p class="text">Гостиница</p>
-            <p class="text-price">от 2000 р.</p>
-            <a href="#" class="button about-hotel">Подробнее</a>
-            <a href="#" class="button button-brown">Забронировать</a>
+            <div class="catalog-item-column">
+              <h3><a href="#" class="catalog-title">Villas at Poco Diablo</a></h3>
+              <div class="item-text-column">
+                <p class="text">Гостиница</p>
+                <p class="text-price">от 2000 р.</p>
+              </div>
+              <div class="item-button-column">
+                <a href="#" class="button about-hotel">Подробнее</a>
+                <a href="#" class="button button-brown">Забронировать</a>
+              </div>
+            </div>
             <div class="stars">
               <span></span>
               <span></span>
@@ -134,14 +154,14 @@
     <footer class="main-footer">
       <p class="footer-contacts">#visitSEDONA <a class="footer-phone" href="tel:+74956660166">ТЕЛ: +7(495) 665-01-66</a>
       </p>
-      <ul class="footer-social">
-        <li>Twitter
+      <ul class="footer-social-button">
+        <li><span class="visually-hidden">Twitter</span>
           <a class="social-button icon-twitter" href="#"></a>
         </li>
-        <li>Facebook
+        <li><span class="visually-hidden">Facebook</span>
           <a class="social-button icon-facebook" href="#"></a>
         </li>
-        <li>Youtube
+        <li><span class="visually-hidden">Youtube</span>
           <a class="social-button icon-youtube" href="#"></a>
         </li>
       </ul>
