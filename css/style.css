@@ -519,13 +519,21 @@ input:focus {
 }
 .title-results {
   margin: 0; 
-  margin-right: 20px;
+  margin-right: 46px;
 }
 
 .sort {  
   font-size: 12px;
   line-height: 18px;
   color: var(--basic-black);
+  margin: 0;
+  margin-right: 40px;
+  align-self: flex-start;
+}
+.sort-list-box {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 .sort-list {
   display: flex;
@@ -533,6 +541,11 @@ input:focus {
   margin-bottom: 31px;
   list-style: none;
   padding: 0;
+  align-self: flex-start;
+}
+
+.sort-list li:nth-child(3) {
+  margin-right: 255px;
 }
 
 .sort-list a {
@@ -540,6 +553,8 @@ input:focus {
   line-height: 18px;
   border-bottom: 1px dotted var(--basic-blue);
   color: var(--special-black);
+  margin: 0;
+  margin-right: 32px;
 }
 .sort-item:hover {
   color: var(--basic-blue);
@@ -593,6 +608,14 @@ input:focus {
 }
 .about-hotel {
   margin-right: 6px;
+}
+.rating-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-right: 0;
+  margin-left: auto;
 }
 .rating {
   height: 27px;
